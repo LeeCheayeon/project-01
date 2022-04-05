@@ -1,0 +1,76 @@
+* {margin: 0; padding: 0;}
+:root {
+  --color-1:#9f9f9f;
+  --color-2:#333;
+  --color-3:#c3c3c3;
+  --color-4:#8d8d8d;
+  --color-5:#414141;
+  --color-6:#ebebeb;
+}
+/* - display 정렬 - */
+.flex-cen-cen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-cen-end {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.flex-cen-start {
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+}
+.flex-between-cen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-between-start {
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
+}
+.flex-between-end {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.flex-end-cen {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.flex-end-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.flex-end-start {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.flex-around-cen {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.flex-around-end {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.flex-around-start {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.flex-start-end {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
