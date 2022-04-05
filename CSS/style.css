@@ -105,6 +105,30 @@
   border-radius: 2vw;
 }
 
+.name {
+  color: var(--color-2);
+  font-size: 160%;
+
+  margin-bottom: 2vw;
+}
+
+.brand{
+  color: var(--color-4);
+  font-size: 110%;
+  font-weight: 600;
+}
+
+.price {
+  color: var(--color-2);
+  font-size: 180%;
+}
+
+.subtext {
+  font-size: 100%;
+  color: var(--color-4);
+  font-weight: bold;
+}
+
 /* <header 고정 부분>
 */
 
