@@ -129,12 +129,34 @@
   font-weight: bold;
 }
 
+.subtext-1 {
+  font-size: 100%;
+  color: var(--color-4);
+  text-align: center;
+}
+
 .subtext-2 {
   font-size: 90%;
   width: 20vw;
   color: var(--color-5);
   text-align: center;
 }
+
+.subtext-3 {
+  font-size: 80%;
+  /* width: 20vw; */
+  color: var(--color-5);
+  text-align: center;
+  margin-top: 0.3vw;
+}
+
+.subtext-4 {
+  font-size: 80%;
+  /* width: 20vw; */
+  color: var(--color-5);
+  margin-top: 0.3vw;
+}
+
 .botton-3 {
   background-color: var(--color-4);
 width: 7vw;
@@ -170,7 +192,7 @@ nav {
 }
 
 nav>div>div:nth-child(1) {
-  margin-right: 72vw;
+  margin-right: 74vw;
 }
 
 /* <헤더 고정 하단 부분 제품 상세설명> */
