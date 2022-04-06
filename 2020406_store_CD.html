@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+
+  <style>
+    #root {
+      width: 100vw;
+      height: 100vh;
+    }
+    /* <!--스토어 클래스DIY 메뉴 고정틀--> */
+    #search {
+      width: inherit;
+      height: 4vh;
+      /* border: 1px solid green; */
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      margin-bottom: 1vh;
+    }
+    #search>div {
+      width: 95vw;
+      height: 3vh;
+      background-color: var(--color-3);
+      
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    main>section:nth-child(2) {
+      width: inherit;
+      height: 4vh;
+    }
+    
+    main>section:nth-child(2)>div:nth-child(1)>div {
+      width: 30vw;
+      height: 4vh;
+    }
+    
+    main>section:nth-child(2)>div:nth-child(1)>div :hover {
+      opacity: 1;
+      height: 4vh;
+      border-bottom: 2px solid var(--color-5);
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #banner {
+      width: inherit;
+      height: 25vh;
+      background-color: var(--color-1);
+      
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
+    
+    #banner>div {
+      width: 30vw;
+      height: 3vh;
+      
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    /* <!--스토어 클래스/DIY 메뉴 고정틀--> */
+    
+    main>section:nth-child(4){
+      width: inherit;
+      height: 26vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      margin-top: 2vh;
+      margin-bottom: 1vh;
+    }
+
+    main>section:nth-child(4)>div {
+      height: 12vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* border: 1px solid green; */
+    }
+
+    main>section:nth-child(4)>div:nth-child(1)>div {
+      width: 20vw;
+      height: 10vh;
+      margin: 5vw;
+    }
+
+    main>section:nth-child(4)>div:nth-child(1)>div>div{
+      width: inherit;
+      height: 8vh;
+      background-color: var(--color-3);
+    }
+
+    main>section:nth-child(4)>div:nth-child(2)>div {
+      width: 20vw;
+      height: 10vh;
+      margin: 5vw;
+    }
+
+    main>section:nth-child(4)>div:nth-child(2)>div>div{
+      width: inherit;
+      height: 8vh;
+      background-color: var(--color-3);
+    }
+
+    main>section:nth-child(5) {
+      margin-top: 3vh;
+      margin-left: 3vw;
+      margin-right: 3vw;
+    }
+
+    main>section:nth-child(5)>div:nth-child(2) {
+      height: 80vh;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: 2vw;
+    }
+
+    main>section:nth-child(5)>div:nth-child(2)>div:nth-child(1){
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    main>section:nth-child(5)>div:nth-child(2)>div:nth-child(1)>div:nth-child(2) {
+      width: 53vw;
+      height: 15vh;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    main>section:nth-child(5)>div:nth-child(2)>div:nth-child(1)>div:nth-child(2)>div:nth-child(4) {
+      display: flex;
+    }
+
+    main>section:nth-child(5)>div:nth-child(2)>div:nth-child(2){
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    main>section:nth-child(5)>div:nth-child(2)>div:nth-child(2)>div:nth-child(2) {
+      width: 53vw;
+      height: 15vh;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    main>section:nth-child(5)>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>div:nth-child(4) {
+      display: flex;
+    }
+
+    main>section:nth-child(5)>div:nth-child(2)>div:nth-child(3){
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    main>section:nth-child(5)>div:nth-child(2)>div:nth-child(3)>div:nth-child(2) {
+      width: 53vw;
+      height: 15vh;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    main>section:nth-child(5)>div:nth-child(2)>div:nth-child(3)>div:nth-child(2)>div:nth-child(4) {
+      display: flex;
+    }
+
+
+    main>section:nth-child(5)>div:nth-child(2)>div:nth-child(4){
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    main>section:nth-child(5)>div:nth-child(2)>div:nth-child(4)>div:nth-child(2) {
+      width: 53vw;
+      height: 15vh;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    main>section:nth-child(5)>div:nth-child(2)>div:nth-child(4)>div:nth-child(2)>div:nth-child(4) {
+      display: flex;
+    }
+
+    main>section:nth-child(5)>div:nth-child(2)>div:nth-child(5){
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    main>section:nth-child(5)>div:nth-child(2)>div:nth-child(5)>div:nth-child(2) {
+      width: 53vw;
+      height: 15vh;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    main>section:nth-child(5)>div:nth-child(2)>div:nth-child(5)>div:nth-child(2)>div:nth-child(4) {
+      display: flex;
+    }
+
+    span {
+      font-size: 80%;
+      color: var(--color-5);
+      margin-top: 0.3vw;
+    }
+  </style>
+</head>
+<body>
+  <header> <!--고정-->
+    <div></div>
+    <nav class="flex-cen-cen"> <!--메뉴-->
+      <div class="flex-cen-cen">
+        <div class="menu-box"></div> <!--뒤로가기-->
+        <div class="menu-box"></div> <!--스크랩-->
+        <div class="menu-box"></div> <!--장바구니-->
+      </div>
+    </nav>
+    <div> <!--하단-->
+      <div> <!--위로가기-->
+        <p>TOP</p>
+      </div>
+      <div class="flex-around-cen"> <!--home버튼-->
+        <div class="botton-3"></div>
+        <div class="botton-3"></div>
+        <div class="botton-3"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="search">
+      <div>
+        <p class="subtext-2">검색</p>
+      </div>
+    </section>
+    <section> <!--상단 메뉴-->
+      <div class="flex-around-cen">
+        <div class="flex-cen-cen">
+          <div class="subtext">원데이 클래스</div>
+        </div>
+        <div class="flex-cen-cen">
+          <div class="subtext">입욕제 DIY</div>
+        </div>
+      </div>
+      <hr>
+    </section>
+    <section id="banner">
+      <div>
+        <div class="ellipse-1"></div>
+        <div class="ellipse-1"></div>
+        <div class="ellipse-1"></div>
+        <div class="ellipse-1"></div>
+      </div>
+    </section>
+    <section><!--4번째 아이콘-->
+      <div>
+        <div><!--윗박스-->
+          <div></div>
+          <p class="subtext-2">지역별</p>
+        </div>
+        <div>
+          <div></div>
+          <p class="subtext-2">인기클래스</p>
+        </div>
+        <div>
+          <div></div>
+          <p class="subtext-2">종류별</p>
+        </div>
+      </div> 
+      <div> <!--아래박스-->
+        <div>
+          <div></div>
+          <p class="subtext-2">아이와함께</p>
+        </div>
+        <div>
+          <div></div>
+          <p class="subtext-2">반려동물</p>
+        </div>
+        <div>
+          <div></div>
+          <p class="subtext-2">알레르기</p>
+        </div>
+      </div> 
+    </section>
+    <section><!--5번째 오늘의클래스-->
+      <div class="store-main-name">오늘의 인기 클래스</div>
+      <div> <!--전체박스-->
+        <div> <!--박스하나-->
+          <div class="store-box-1"><!--상품박스-->
+            <div class="min-box-1"></div>
+          </div>
+          <div> <!--문구-->
+            <p class="brand">000 입욕제 클래스</p>
+            <p class="subtext">00% 40,000</p>
+            <p class="subtext-4">리뷰2,000</p>
+            <div>
+              <div class=" min-box-2"><span>비대면</span></div>
+              <div class="min-box-3"><span>특가</span></div>
+            </div>
+          </div>
+        </div>
+        <div> <!--박스 둘-->
+          <div class="store-box-1"><!--상품박스-->
+            <div class="min-box-1"></div>
+          </div>
+          <div> <!--문구-->
+            <p class="brand">000 입욕제 6종 세트 만들기</p>
+            <p class="subtext">00% 40,000</p>
+            <p class="subtext-4">리뷰2,000</p>
+            <div>
+              <div class=" min-box-2"><span>직접만나요</span></div>
+              <div class="min-box-3"><span>특가</span></div>
+            </div>
+          </div>
+        </div>
+        <div> <!--박스 셋-->
+          <div class="store-box-1"><!--상품박스-->
+            <div class="min-box-1"></div>
+          </div>
+          <div> <!--문구-->
+            <p class="brand">000 입욕제 6종 세트</p>
+            <p class="subtext">00% 40,000</p>
+            <p class="subtext-4">리뷰2,000</p>
+            <div>
+              <div class=" min-box-2"><span>무료배송</span></div>
+              <div class="min-box-3"><span>특가</span></div>
+            </div>
+          </div>
+        </div>
+        <div> <!--박스 넷-->
+          <div class="store-box-1"><!--상품박스-->
+            <div class="min-box-1"></div>
+          </div>
+          <div> <!--문구-->
+            <p class="brand">000 입욕제 6종 세트</p>
+            <p class="subtext">00% 40,000</p>
+            <p class="subtext-4">리뷰2,000</p>
+            <div>
+              <div class=" min-box-2"><span>무료배송</span></div>
+              <div class="min-box-3"><span>특가</span></div>
+            </div>
+          </div>
+        </div>
+        <div> <!--박스 다섯-->
+          <div class="store-box-1"><!--상품박스-->
+            <div class="min-box-1"></div>
+          </div>
+          <div> <!--문구-->
+            <p class="brand">000 입욕제 6종 세트</p>
+            <p class="subtext">00% 40,000</p>
+            <p class="subtext-4">리뷰2,000</p>
+            <div>
+              <div class=" min-box-2"><span>무료배송</span></div>
+              <div class="min-box-3"><span>특가</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+</body>
+</html>

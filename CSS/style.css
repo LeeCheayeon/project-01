@@ -123,6 +123,12 @@
   font-size: 180%;
 }
 
+.store-main-name {
+  font-size: 120%;
+  color: var(--color-1);
+  font-weight: 600;
+}
+
 .subtext {
   font-size: 100%;
   color: var(--color-4);
@@ -162,6 +168,40 @@
 width: 7vw;
 height: 7vw;
 border-radius: 4vw;
+}
+
+.store-box-1 {
+  width: 35vw;
+  height: 15vh;
+  background-color: var(--color-3);
+
+  display: flex;
+  justify-content: flex-end;
+}
+.min-box-1 {
+  background-color: var(--color-6);
+  width:40%;
+  height: 2.5vh;
+  border-radius: 1vw;
+  margin: 1vw;
+}
+
+.min-box-2 {
+  background-color: var(--color-6);
+  width:30%;
+  height: 2.5vh;
+  border-radius: 1vw;
+  margin: 1vw;
+  text-align: center;
+}
+
+.min-box-3 {
+  background-color: var(--color-6);
+  width:20%;
+  height: 2.5vh;
+  border-radius: 1vw;
+  margin: 1vw;
+  text-align: center;
 }
 
 
