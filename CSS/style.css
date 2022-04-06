@@ -204,6 +204,20 @@ border-radius: 4vw;
   text-align: center;
 }
 
+.min-box-4 {
+  background-color: var(--color-3);
+  width:24%;
+  height: 9vh;
+  margin-top: 1vw;
+}
+
+.min-box-5 {
+  background-color: var(--color-3);
+  width:24%;
+  height: 4vh;
+  margin-top: 1vw;
+}
+
 
 /* <header 고정 부분>
 */
