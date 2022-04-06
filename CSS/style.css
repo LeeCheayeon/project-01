@@ -268,4 +268,24 @@ header>div:nth-child(3)>div:nth-child(2)>div {
   margin-left: 2vw;
   margin-right: 2vw;
 }
+/* <!--글문단 묶음-1--> */
 
+.flex {
+  display: flex;
+}
+
+.text-box-display {
+  width: 53vw;
+  height: 15vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.image-box-display {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
