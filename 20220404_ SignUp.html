@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :root {
+      --color-1:rgb(182, 182, 182);
+      --color-2:rgb(124, 124, 124);
+      --color-3:rgb(63, 63, 63);
+    }
+
+    .box {
+      background-color: #c4c4c4;
+      width: inherit;
+      height: 5vh;
+      border-radius: 1vw;
+    }
+    .box-text {
+      color: white;
+      padding-top: 1vh;
+      padding-left: 2vw;
+      margin-bottom: 0.6vh;
+    }
+
+    * {margin: 0; padding: 0;}
+
+    #root {
+      width: 100vw;
+      height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background-color: rgb(231, 231, 231);
+    }
+    
+    #war {
+      width: 90vw;
+      height: 90vh;
+
+      border: 1px solid red;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+    }
+
+    #war>div:nth-child(1) {
+      color: #c4c4c4;
+      margin-bottom: 1vh;
+      margin-right: 22vw;
+    }
+
+    #war>div:nth-child(2) {
+      width: 60vw;
+      height: 40vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    #war>div:nth-child(2)>div {
+      margin-bottom: 2vw;
+    }
+
+    #war>div:nth-child(2)>div:nth-child(5) {
+      color: #c4c4c4;
+      text-align: center;
+      background-color: var(--color-2);
+    } 
+
+    #war>div:nth-child(2)>div:nth-child(6) {
+      color: #c4c4c4;
+      text-align: start;
+      width: inherit;
+      font-size: small;
+      margin-bottom: 6vh;
+    }
+
+
+    #war>div:nth-child(3) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      /* border: 1px solid salmon; */
+    }
+
+    #war>div:nth-child(3)>div:nth-child(1) {
+      background-color: #c4c4c4;
+      width: 35vw;
+      height: 0.1vh;
+      margin-right: 2vw;
+    }
+
+    #war>div:nth-child(3)>div:nth-child(2) {
+      color: #c4c4c4;
+    }
+
+    #war>div:nth-child(3)>div:nth-child(3) {
+      background-color: #c4c4c4;
+      width: 35vw;
+      height: 0.1vh;
+      margin-left: 2vw;
+    }
+
+    #war>div:nth-child(4) {
+      width: 40vw;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+    }
+
+    #war>div:nth-child(4)>div{
+      width: 50vw;
+      height: 4vh;
+      text-align: center;
+      padding-top: 1.5vh;
+      color: var(--color-3);
+
+    }
+
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div id="war">
+      <div>000000000000000000</div>
+      <div>
+        <div class="box">
+          <div class="box-text">이름</div>
+        </div>
+        <div class="box">
+          <div class="box-text">이메일</div>
+        </div>
+        <div class="box">
+          <div class="box-text">비밀번호</div>
+        </div>
+        <div class="box">
+          <div class="box-text">비밀번호 재확인</div>
+        </div>
+        <div class="box">
+          <div class="box-text">Enter</div>
+        </div>
+        <div>
+          0000000000000000000000000<br>00000000000000
+        </div>
+      </div>
+      
+      <div>
+        <div></div>
+        <div>
+          00000000
+        </div>
+        <div></div>
+      </div>
+
+      <div class="box">
+        <div>Face login</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
